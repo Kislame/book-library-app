@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <ul>
+          <li>Books</li>
+          <li>Authors</li>
+          <li>Blog</li>
+          <li>Home</li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hidden" id="form-container">
+      <form class="flex" id="book-form">
+        <label for="book-name"
+          >Book Title: <input type="text" name="book-name" id="book-name"
+        /></label>
+
+        <label for="book-author"
+          >Book Author: <input type="text" name="book-author" id="book-author"
+        /></label>
+        <label for="book-pages">
+          Number of Pages:
+          <input type="number" name="book-pages" id="book-pages"
+        /></label>
+
+        <label for="answer"
+          >Have you read it before ?:
+          <input type="checkbox" name="answer" id="answer" />
+        </label>
+        <button class="submit-btn" type="submit">Add</button>
+      </form>
+    </section>
+
+    <section class="wrapper">
+      <section class="books"></section>
+    </section>
+
+    <section class="end">
+      <button id="addBook" class="add-book">Add Book</button>
+    </section>
+    <script src="./books.js"></script>
+  </body>
+</html>
